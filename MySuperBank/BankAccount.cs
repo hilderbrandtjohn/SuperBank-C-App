@@ -16,7 +16,7 @@ namespace MySuperBank
                 decimal balance = 0;
                 foreach(var item in AllTransactions)
                 {
-                    balance = +item.Amount;
+                    balance +=item.Amount;
 
                 }
                 return balance;
